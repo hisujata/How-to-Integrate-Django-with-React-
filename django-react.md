@@ -14,21 +14,21 @@ You need to give below commands to get the vitual environment ready.
 
 Commands:
 
-python -m venv myenv
+    python -m venv myenv
 
-cd myenv\Scripts
+    cd myenv\Scripts
 
-.\activate
+    .\activate
 
 Once the environment is ready we need install django by giving below command. It will create  a new directory to run the backend server.
 
 Commands:
 
-pip install django
+    pip install django
 
-django-admin startproject myroject
+    django-admin startproject myroject
 
-cd myproject
+    cd myproject
 
 Startproject will create a directory and we have name the directory myapp you can anything you like.
 
@@ -58,23 +58,23 @@ So till the app is getting reday lets do changes in our pythons files which are 
 
 First thing open setings.py in vs code and here tt the top of the file to import os from manage.py. Just copy paste the below line in your setting.py.
 
-import os 
+    import os 
 
 Next scroll down and come to templates section and inside 'DIRS' put below line of code to point html in here. In my case my react code recides in frontend directort inside which there will be build directory.
 
-'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/build')
-        ],
+        'DIRS': [
+                    os.path.join(BASE_DIR, 'frontend/build')
+                ],
 
 Dont get confused if you dont see the build directory yet. We will get it once we build the react code.
 
 Next create views.py inside the root folder of django in my case its myproject.
 Just copy past the below code in views.py.
 
-from django.shortcuts import render
+        from django.shortcuts import render
 
-def index(request):
-    return render(request, 'index.html') 
+                def index(request):
+            r       eturn render(request, 'index.html') 
 	
 	
 	
@@ -84,7 +84,7 @@ from .views import index
 
 and inside urlpatterns add belwo code its empty route to call index fuction from view.py.
 
-path('', index), 
+        path('', index), 
 
 
 After that run npm build to build the application at this stage you will get build folder in react app that you created in my case its frontend.
@@ -93,9 +93,9 @@ Now the last step.
 
 In settings.py at the end just put belwo line of code. This will serve the static files from build directory.
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/build/static')
-] 
+        STATICFILES_DIRS = [
+                    os.path.join(BASE_DIR, 'frontend/build/static')
+                        ]
 
 And you are all set. Now you can start writing your code. In my project I have smaple bootstrap code with very basic styling. 
 Now every time you make some changes you will have to run npm build and after that refresh the brouser to see the changes.
