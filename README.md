@@ -1,14 +1,13 @@
 
-What you need python vs.code and pip
+Dependencies that you need python 3.10, vs.code and pip.
 
-You need to pay attention to belwo points while downloading python otherwise you will get errors.
+You need to pay attention to below points while downloading python otherwise you will get errors. Tick all the checkboxes before cliking install now.
 
-1. 
-2.
+1. Install launcher for all users
+2. add version to path by default it will be disable 
 
-While installing vs.code remember below points.
-1.
-2.
+While installing vs.code similar to pything you need to unable all the checkboxes while downloding 
+
 
 Now that we have the dependencies lets get the virtual environment ready for django. Create a directory in your local and open the directory in vs code.
 You need to give below commands to get the vitual environment ready.
@@ -16,7 +15,9 @@ You need to give below commands to get the vitual environment ready.
 Commands:
 
 python -m venv myenv
+
 cd myenv\Scripts
+
 .\activate
 
 Once the environment is ready we need install django by giving below command. It will create  a new directory to run the backend server.
@@ -39,8 +40,9 @@ python manage.py runserver
 You will see an link on your terminal window once the server is ready <http://127.0.0.1:8000/>. Something like that.
 Follow the link and it will open in default beouser or you can copy the link and paste in brouser of your choice.
 
-<img src="">
- Yeee its ready! 
+<img src="https://github.com/hisujata/How-to-Integrate-Django-with-React-/blob/master/django.png">
+
+Yeee its ready! 
  
 Lets move forward and get our react app ready. Most important point. Dont use the same terminal window as our backend server is running here. 
 Open new terminal window in vs.code instaed.
@@ -48,7 +50,7 @@ Open new terminal window in vs.code instaed.
 Ok now we need to create a react app in the base directory where you have your django server. In my case its "django".
 If you gave diffrent name then please use that.
 
-I alredy created a detailed documentation on how to install react app in local machine. You can check that here. <href=""> 
+I alredy created a detailed documentation on how to install react app in local machine. You can check that here. <href="https://github.com/hisujata/React-Setup"> 
 
 
 It will take some time. We all know react uses single html file to manipulate dom to render UI components. 
@@ -97,5 +99,7 @@ STATICFILES_DIRS = [
 
 And you are all set. Now you can start writing your code. In my project I have smaple bootstrap code with very basic styling. 
 Now every time you make some changes you will have to run npm build and after that refresh the brouser to see the changes.
+
+<img src="https://github.com/hisujata/How-to-Integrate-Django-with-React-/blob/master/reactapp.png">
 
 If you want to configure a databse you will have to configure it in settings.py in databse section.
