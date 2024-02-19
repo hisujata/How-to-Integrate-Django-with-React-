@@ -102,8 +102,4 @@ Now every time you make some changes you will have to run npm build and after th
 
 <img src="https://github.com/hisujata/How-to-Integrate-Django-with-React-/blob/master/reactapp.png">
 
-<<<<<<< HEAD:README.md
 If you want to configure a databse you will have to configure it in settings.py in databse section.
-=======
-If you want to configure a databse you will have to configure it in settings.py in databse section.
->>>>>>> dd9a19460849bdfe119c964b5b4aacd94b696dfd:readme.txt
