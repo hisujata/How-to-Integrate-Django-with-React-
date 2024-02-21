@@ -38,7 +38,7 @@ To check if file is there or not you can use ls command. ls command will show al
 
 python manage.py runserver
 
-You will see an link on your terminal window once the server is ready <http://127.0.0.1:8000/>. Something like that.
+You will see an link on your terminal window once the server is ready.
 Follow the link and it will open in default beouser or you can copy the link and paste in brouser of your choice.
 
 <img src="https://github.com/hisujata/How-to-Integrate-Django-with-React-/blob/master/django.png">
