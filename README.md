@@ -51,8 +51,10 @@ Open new terminal window in vs.code instaed.
 Ok now we need to create a react app in the base directory where you have your django server. In my case its "django".
 If you gave diffrent name then please use that.
 
-I alredy created a detailed documentation on how to install react app in local machine. You can check that here. <href="https://github.com/hisujata/React-Setup"> 
+I alredy created a detailed documentation on how to install react app in local machine. You can check that here. 
 
+[React-Setup Repository](https://github.com/hisujata/React-Setup)
+ 
 
 It will take some time. We all know react uses single html file to manipulate dom to render UI components. 
 So till the app is getting reday lets do changes in our pythons files which are located in myproject. To bind our backend with fronted. 
